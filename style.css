@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2 linear;
+    font-family: "Archivo", sans-serif;
+}
+
+:root{
+--azul--escuro:#192A2C ;
+--branco: #FFFFFF; 
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    width: 35.125rem;
+    height: 2.875rem ;
+    margin-top: -1.5rem;
+    margin-left: 53rem;
+    gap: 1.5rem;
+
+    a{
+    color:  var(--branco); 
+    }
+ }
+
+ 
+
+ .secao1{
+    background-image: url(./imagens/elefantesfundo.png) ;
+    background-size: 92rem auto;
+     background-repeat: no-repeat;
+    background-position: center;
+    height: 59rem;
+ }
+
+.logo img{
+    width: 180px;
+    height: auto;
+}
+
+.tropo{
+    
+}

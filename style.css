@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('./AkiraExpanded.otf/Akira\ Expanded\ Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +12,6 @@
     box-sizing: border-box;
     text-decoration: none;
     transition: 0.2 linear;
-    font-family: "Archivo", sans-serif;
 }
 
 :root{
@@ -14,28 +19,79 @@
 --branco: #FFFFFF; 
 }
 
-.menu {
-    display: flex;
-    justify-content: end;
-    width: 35.125rem;
-    height: 2.875rem ;
-    margin-top: -1.5rem;
-    margin-left: 53rem;
-    gap: 1.5rem;
+p{
+    font-family: 'Codec Warm Trial', sans-serif;
+font-size: 0.9rem ;
+color: var(--branco);
+  }
 
+h1{
+  color: var(--);
+}
+
+
+#page {
+    border: 1px solid red;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+header {
+
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%), url(./imagens/elefantesfundo.png) ;
+    background-size:cover;
+     background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+body{
+    background-color: var(--azul--escuro);
+}
+
+
+.menu {
+ display: flex;
+ gap: 1.5rem;
+ justify-content: flex-end;
+ align-items: center;
+ max-width: 100rem;
+ margin-right: 3rem;
+ margin-top:-2rem;
+ 
     a{
-    color:  var(--branco); 
+    color:  var(--branco);
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+  
     }
+
+    a:hover {
+        color: #f0f0f0;
+      }
+
+
+      a:last-child {
+        border: 1px solid var(--branco);
+        border-radius: 5px;
+        padding: 0.4rem 0.9rem;
+        transition: 0.3s;
+      }
+
+      .menu a:last-child:hover {
+        background: var(--branco);
+        color: #000;
+      }
+      
  }
 
  
 
- .secao1{
-    background-image: url(./imagens/elefantesfundo.png) ;
-    background-size: 92rem auto;
-     background-repeat: no-repeat;
-    background-position: center;
-    height: 59rem;
+ .header secao1{
+    display: flex;
+    justify-content: space-between;   
  }
 
 .logo img{
@@ -44,5 +100,53 @@
 }
 
 .tropo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    color: var(--branco);
+    h1 {
+        font-family: 'Akira Expanded', sans-serif;
+         font-size: 5rem;
+         margin: 0;
+         position: relative;
+         line-height: 1;
+    }
+
+    h1::before, h1::after{
+  content: "";
+  position: absolute;
+  height: 2px; 
+  width: 175px;  
+  background: #f4b400;
+    }
+    h1::before {
+        top: 0px;    
+        left: 0px;  
+      }
+
+      h1::after{
+        bottom: 0px; 
+        right: 0px;
+      
+      }
+    p{
+       margin-top: 0.5rem;
+
+    }
     
-}
+  }
+
+  
+ .crocodilo{
+  height: 100vh;
+   display: flex;
+
+ }
+
+ .crocodilo img{
+  width: 16rem;
+  height:  16rem;
+ }

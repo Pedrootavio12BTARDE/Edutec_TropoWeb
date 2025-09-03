@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz — Relações Ecológicas</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="icon" href="data:image/svg+xml,\
+      %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='62' fill='%230a192f'/%3E%3Cpath d='M64 16c18 0 32 14 32 32 0 21-18 29-32 48C50 77 32 69 32 48c0-18 14-32 32-32z' fill='%234ee'/%3E%3Cpath d='M48 88c6 8 10 16 16 24 6-8 10-16 16-24' fill='none' stroke='%234ee' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <meta name="description" content="Um quiz lindo e interativo para estudar relações ecológicas: mutualismo, comensalismo, predação e muito mais." />
+  </head>
+  <body>
+    <canvas id="confetti"></canvas>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <main class="container">
+      <header class="topbar">
+        <div class="menu">
+  
+          <a href="#" class="logo">
+            <img src="../imagens/logo.png" alt="logo">
+          </a>
+    
+          <nav class="menu">
+            <a href="#home">Home</a>
+            <a href="./conteúdo/conteúdo pagina veado.html">Conteúdo</a>
+            <a href="./sobre nos/sobre.html">Sobre</a>
+            <a href="./quiz/quiz.html">Quiz</a>
+            <a href="./login/login.html">Sing in</a>
+          </nav>
+    
+        </div>
+
+
+        <div class="brand">
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2c4.4 0 8 3.6 8 8 0 5.3-4.8 7.2-8 12-3.2-4.8-8-6.7-8-12 0-4.4 3.6-8 8-8z" fill="currentColor"/>
+          </svg>
+          <h1>Quiz</h1>
+        </div>
+        <div class="status">
+          <div class="progress-wrap" aria-label="Progresso">
+            <div id="progressBar" class="progress"></div>
+          </div>
+          <div id="counter" class="counter">0/0</div>
+        </div>
+      </header>
+
+      <section id="screen-start" class="card show">
+        <h2>Vamos jogar?</h2>
+        <p>Teste seus conhecimentos sobre relações ecológicas com perguntas rápidas, explicações claras e um visual maravilhoso.</p>
+
+        <div class="controls">
+          <label class="select">
+            <span>Quantidade de questões</span>
+            <select id="questionCount">
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20" selected>20</option>
+              <option value="30">30</option>
+            </select>
+          </label>
+
+          <label class="select">
+            <span>Dificuldade</span>
+            <select id="difficulty">
+              <option value="mix" selected>Misturado</option>
+              <option value="easy">Fácil</option>
+              <option value="medium">Médio</option>
+              <option value="hard">Difícil</option>
+            </select>
+          </label>
+        </div>
+
+        <button id="btnStart" class="btn primary">Começar</button>
+        <details class="legend">
+          <summary>Conteúdos cobrados</summary>
+          <ul>
+            <li>Intra x Interespecífica; Harmônica x Desarmônica</li>
+            <li>Mutualismo, Protocooperação, Comensalismo, Inquilinismo</li>
+            <li>Predação, Parasitismo, Herbivoria, Amensalismo, Competição</li>
+            <li>Sociedade, Colônia, Canibalismo</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="screen-quiz" class="card">
+        <div class="question-head">
+          <div id="tag" class="tag">Tag</div>
+          <h3 id="questionText">Pergunta</h3>
+        </div>
+
+        <div id="options" class="options" role="group" aria-label="Alternativas"></div>
+
+        <div class="bottom-bar">
+          <button id="btnSkip" class="btn ghost">Pular</button>
+          <button id="btnNext" class="btn" disabled>Próxima</button>
+        </div>
+
+        <div id="explanation" class="explanation" hidden></div>
+      </section>
+
+      <section id="screen-end" class="card">
+        <h2>Resultado</h2>
+        <div class="score">
+          <div class="score-number" id="scoreNumber">0%</div>
+          <div id="scoreMsg" class="score-msg">Mensagem</div>
+        </div>
+        <div class="actions">
+          <button id="btnRetry" class="btn">Jogar novamente</button>
+          <button id="btnReview" class="btn ghost">Revisar questões</button>
+        </div>
+        <div id="review" class="review" hidden></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Feito com amor para estudar Biologia</small>
+    </footer>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

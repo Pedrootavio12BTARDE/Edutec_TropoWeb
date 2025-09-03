@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #141414;
+  background-color: #192A2C;
   color: white;
   display: flex;
   flex-direction: column;
@@ -16,11 +16,11 @@ body {
 
 /* Título */
 .titulo-principal {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .titulo-principal h1 {
-  font-size: 32px;
+  font-size: 35px;
   color: #fff;
 }
 
@@ -34,11 +34,11 @@ body {
 
 /* Card */
 .card {
-  background-color: #1f1f1f;
+  background-color: #2F4447;
   width: 300px;
   padding: 20px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
 .card img {
@@ -49,27 +49,29 @@ body {
   object-fit: cover;
 }
 
-.card h2, .card p, .card a {
+.card h2,
+.card p,
+.card a {
   color: #fff;
 }
 
 .card strong {
-  color: #C4F82A;
+  color: #6B8E23; /* corrigido, antes estava inválido */
 }
 
 .card a {
   display: block;
   text-decoration: none;
-  background-color: #333;
+  background-color: #39727B;
   margin-top: 10px;
   padding: 8px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .card a:hover {
-  background-color: #C4F82A;
+  background-color: #39727B;
   color: #141414;
   transition: 0.4s;
 }
@@ -89,7 +91,7 @@ body {
 }
 
 .texto-destaque {
-  background-color: #2e8b57;
+  background-color: #27512E;
   padding: 20px;
   border-radius: 10px;
 }
@@ -100,15 +102,3 @@ body {
   line-height: 1.6;
   text-align: justify;
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../AkiraExpanded.otf/Akira Expanded Demo.otf') format('opentype');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(
+      135deg,
+      #0d1415 0%,
+      #132326 40%,
+      #192A2C 100%
+    );
+    min-height: 100vh;
+    font-family: 'Codec Warm Trial', sans-serif;
+    color: white;
+  }
+  
+  /* ---------------- MENU ---------------- */
+  
+  header .secao1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo img {
+    width: 180px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu a {
+    color: white;
+    font-family: "Archivo", sans-serif;
+    text-decoration: none;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .menu a:hover {
+    color: #A6FF00;
+    transform: scale(1.05);
+  }
+  
+  .menu a:last-child {
+    border: 1px solid white;
+    padding: .4rem .9rem;
+    border-radius: 5px;
+  }
+  
+  .menu a:last-child:hover {
+    background: white;
+    color: #000;
+  }
+  
+  /* ---------------- TÍTULO ---------------- */
+  
+  .titulo {
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
+  
+  /* ---------------- CARDS DO RANKING ---------------- */
+  
+  .cards {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+  
+  .card {
+    width: 200px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2rem;
+    backdrop-filter: blur(5px);
+  }
+  
+  .primeiro {
+    height: 300px;
+  }
+  
+  .foto {
+    width: 60px;
+    height: 60px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+  }
+  
+  .card h3 {
+    font-family: "Nexa Heavy", sans-serif;
+    font-size: 1rem;
+  }
+  
+  .card p {
+    margin-top: 1rem;
+    background: #3c7f8f;
+    padding: .4rem;
+    border-radius: 5px;
+    font-size: .8rem;
+  }
+  

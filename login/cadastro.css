@@ -139,3 +139,44 @@ body {
 .bottom-text a:hover {
     text-decoration: underline;
 }
+
+
+/* MENU DO SITE */
+.menu {
+    width: 100%;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #d8d8d8;
+    text-decoration: underline;
+}

@@ -59,6 +59,12 @@ body {
 
 .input-box input::placeholder {
    color: #c5c5c5;
+
+}
+
+.input-box input:focus {
+    border: 2px solid #fff;
+
 }
 
 .input-box i {
@@ -126,3 +132,52 @@ body {
 .register-link a:hover {
     text-decoration: underline;
 }
+
+.header-login {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+  
+  .header-login .secao1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-login .logo img {
+    width: 150px;
+  }
+  
+  .header-login .menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .header-login .menu a {
+    color: #fff;
+    font-family: "Archivo", sans-serif;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    text-decoration: none;
+
+  }
+  
+  .header-login .menu a:hover {
+    color: #A6FF00;
+  }
+  
+  .header-login .menu a:last-child {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.4rem 0.9rem;
+  }
+  
+  .header-login .menu a:last-child:hover {
+    background: #fff;
+    color: #000;
+  }
+  

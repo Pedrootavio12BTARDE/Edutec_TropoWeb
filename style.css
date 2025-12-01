@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url('./AkiraExpanded.otf/Akira\ Expanded\ Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.2 linear;
+}
+
+:root {
+  --azul--escuro:#192A2C ;
+  --branco: #FFFFFF; 
+}
+
+p {
+  font-family: 'Codec Warm Trial', sans-serif;
+  font-size: 0.9rem ;
+  color: var(--branco);
+}
+
+h1 {
+  color: var(--branco);
+  font-family: "Nexa Heavy", sans-serif;
+}
+
+#page {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%), url(./imagens/elefantesfundo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background-color: var(--azul--escuro);
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 100rem;
+  margin-right: 3rem;
+  margin-top:-2rem;
+}
+
+.menu a {
+  color:  var(--branco);
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #f0f0f0;
+}
+
+.menu a:last-child {
+  border: 1px solid var(--branco);
+  border-radius: 5px;
+  padding: 0.4rem 0.9rem;
+  transition: 0.3s;
+}
+
+.menu a:last-child:hover {
+  background: var(--branco);
+  color: #000;
+}
+
+.menu a:hover,
+.saiba:hover {
+  transform: scale(1.08);
+  color: #A6FF00;
+  border-color: #A6FF00; 
+}
+
+.header secao1 {
+  display: flex;
+  justify-content: space-between;   
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+.tropo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  color: var(--branco);
+}
+
+.tropo h1 {
+  font-family: 'Akira Expanded', sans-serif;
+  font-size: 5rem;
+  margin: 0;
+  position: relative;
+  line-height: 1;
+}
+
+.tropo h1::before, 
+.tropo h1::after {
+  content: "";
+  position: absolute;
+  height: 2px; 
+  width: 175px;  
+  background: #f4b400;
+}
+
+.tropo h1::before {
+  top: 0px;    
+  left: 0px;  
+}
+
+.tropo h1::after {
+  bottom: 0px; 
+  right: 0px;
+}
+
+.tropo p {
+  margin-top: 0.5rem;
+}
+
+.crocodilo {
+  max-width:1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #000 3.21%, #162527 31.14%, #192A2C 34.96%), #F5F5F5;
+}
+
+.crocodilo img {
+  width: 20rem;
+  height:  20rem;
+  margin-left:6rem;
+}
+
+.texto h1 {
+  display: inline-block;  
+  color: white;
+  font-size: 3.3rem;
+}
+
+.texto h1::after {
+  content: "";
+  display: block;
+  width: 6.5rem;
+  height: 0.10rem;
+  background: #FFD700;
+  margin-top: 0.5rem;
+}
+
+.texto p {
+  line-height: 1.3rem;
+  margin-top: 1.3rem;
+}
+
+.relacoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relacoes img {
+  width:30rem;
+  height:20rem;
+}
+
+.nos {
+  max-width:1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nos img {
+  width: 20rem;
+  height:  20rem;
+  margin-left:6rem;
+}
+
+.textonos h1 {
+  display: inline-block;  
+  color: white;
+  font-size: 3.3rem;
+}
+
+.textonos h1::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 0.10rem;
+  background: #FFD700;
+  margin-top: 0.5rem;
+}
+
+.textonos p {
+  line-height: 1.3rem;
+  margin-top: 1.3rem;
+}
+
+.saiba {
+  display: inline-block;
+  border: 1px solid var(--branco);
+  border-radius: 5px;
+  padding: 0.4rem 0.9rem;
+  color: var(--branco);
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  text-decoration: none;  
+  margin-top: 1rem;
+}
+
+.quiz {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

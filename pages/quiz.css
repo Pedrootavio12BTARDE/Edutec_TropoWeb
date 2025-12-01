@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('./AkiraExpanded.otf/Akira\ Expanded\ Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2 linear;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f2830;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.topo {
+    background: #1c3b45;
+    padding: 20px;
+    text-align: center;
+}
+
+.timer {
+    margin: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.pergunta {
+    background: #1a3a42;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.alternativa {
+    margin: 8px 0;
+}
+
+.finalizar {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    background: #32b1b7;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.resultado {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 26px;
+}
+
+.escondido {
+    display: none;
+}
+  .menu {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 100rem;
+    margin-right: 3rem;
+    margin-top:-2rem;
+  }
+  
+  .menu a {
+    color:  var(--branco);
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #f0f0f0;
+  }
+  
+  .menu a:last-child {
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    padding: 0.4rem 0.9rem;
+    transition: 0.3s;
+  }
+  
+  .menu a:last-child:hover {
+    background: var(--branco);
+    color: #000;
+  }
+  
+  .menu a:hover,
+  .saiba:hover {
+    transform: scale(1.08);
+    color: #A6FF00;
+    border-color: #A6FF00; 
+  }
+  
+  .header secao1 {
+    display: flex;
+    justify-content: space-between;   
+  }
+  
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+
+  .main {
+    min-height: 100vh;
+    background: url('../imagens/quiz.png');
+    background-size: cover;
+    background-position: center;
+  }
+  

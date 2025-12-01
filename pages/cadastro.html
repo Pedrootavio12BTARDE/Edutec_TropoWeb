@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ÍCONES (necessário p/ os ícones do formulário) -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script src="./cadastro.js" defer></script>
+    <link rel="stylesheet" href="cadastro.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+
+<!-- MENU DO SITE -->
+<header class="menu">
+    <a href="../index.html" class="logo">
+        <img src="../imagens/logo.png" alt="logo">
+    </a>
+
+    <nav class="nav-links">
+        <a href="../conteúdo/conteúdo pagina veado.html">Conteúdo</a>
+        <a href="../sobre nos/sobre.html">Sobre Nós</a>
+        <a href="../quiz/quiz.html">Quiz</a>
+        <a href="./login.html" class="btn-login">Sign in</a>
+    </nav>
+</header>
+
+<!-- FORMULÁRIO -->
+<div class="container">
+    <h1>Cadastro</h1>
+
+    <form id="formCadastro">
+
+        <label for="name">Nome completo:</label>
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Digite seu nome completo">
+            <i class='bx bx-user'></i>
+        </div>
+
+        <label for="email">Email:</label>
+        <div class="input-box">
+            <input type="email" id="email" placeholder="Digite seu email">
+            <i class='bx bx-envelope'></i>
+        </div>
+
+        <label for="age">Idade:</label>
+        <div class="input-box">
+            <input type="number" id="age" placeholder="Digite sua idade">
+            <i class='bx bx-calendar'></i>
+        </div>
+
+        <label for="senha">Senha:</label>
+        <div class="input-box">
+            <input type="password" id="password" placeholder="Digite uma senha">
+            <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <label for="confirmarSenha">Confirmar senha:</label>
+        <div class="input-box">
+            <input type="password" id="confirmarSenha" placeholder="Repita a senha">
+            <i class='bx bx-lock'></i>
+        </div>
+        
+ <div id="mensagem" style="text-align:center; margin-bottom:10px;"></div>
+
+        <button class="btn">Cadastrar</button>
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./login.js" defer></script>
+  <link rel="stylesheet" href="login.css">
+  <!-- Font Awesome via CSS CDN, evita problemas de CORS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-Vz0v...hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Login</title>
+</head>
+
+<body>
+
+  <header class="header-login">
+    <div class="secao1">
+
+      <a href="../index.html" class="logo">
+        <img src="../imagens/logo.png" alt="logo">
+      </a>
+
+      <nav class="menu">
+        <a href="./ranking.html">Ranking</a>
+        <a href="../conteúdo/conteúdo pagina veado.html">Conteúdo</a>
+        <a href="../sobre nos/sobre.html">Sobre Nós</a>
+        <a href="../quiz/quiz.html">Quiz</a>
+        <a href="../pages/cadastro.html">Sign up</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Login</h1>
+
+    <form>
+
+      <!-- Div para mensagens de erro ou sucesso -->
+      <div id="mensagem" style="margin-bottom: 1rem;"></div>
+
+      <div class="input-box">
+        <input type="email" id="email" placeholder="Digite seu email" required>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Digite sua senha" required>
+        <i class="fa-solid fa-lock"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">Lembrar-me</label>
+        <a href="#">Esqueceu a senha?</a>
+      </div>
+
+      <button class="login">Entrar</button>
+
+      <div class="register-link">
+        <p>Não tem conta? <a href="../pages/cadastro.html">Registrar</a></p>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>

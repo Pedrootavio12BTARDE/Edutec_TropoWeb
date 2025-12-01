@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url('./AkiraExpanded.otf/Akira\ Expanded\ Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px; 
+  }
+  
+  body {
+    background: url("../imagens/VEADO\ DE\ FUNDO.png") no-repeat center center/cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 3.75rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 10;
+  }
+  
+  .logo img {
+    height: 2.5rem; 
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.56rem; 
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu a {
+    color: var(#fff);
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #f0f0f0;
+  }
+
+  .login-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #fff;  
+    color: #fff;              
+    background-color: transparent; 
+    border-radius: 5px;       
+    text-decoration: none;    
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 3.38rem; 
+    font-weight: 700;
+    margin-bottom: 3.75rem; 
+  }
+  
+ 
+  .cards {
+    display: flex;
+    gap: 2.5rem; 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #0d3b29;
+    padding: 1.87rem 1.25rem; 
+    width: 15.62rem; 
+    border-radius: 1.125rem; 
+    box-shadow: 0 0.25rem 0.94rem rgba(0,0,0,0.6); 
+    padding: 1.75rem 1.25rem;
+    text-align: center;
+    transition: transform 0.2s;
+  } 
+  
+  
+  .card:hover {
+    transform: translateY(-0.5rem); 
+  }
+  
+  .card img {
+    width: 9rem; 
+    margin-bottom: 1.35rem; 
+  }
+  
+  .card h2 {
+    font-size: 1.12rem; 
+    font-weight: 700;
+    margin-bottom: 1.37rem; 
+    line-height: 1.4em;
+    color: #f6c859;
+  }
+
+  
+  .card button {
+    background: transparent;
+    border: 0.06rem solid white; 
+    padding: 0.62rem 1.5rem; 
+    border-radius: 0.5rem; 
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.94rem; 
+  }
+  .card button {
+    margin-top: auto;
+  }
+  
+  
+  
+  .card button:hover {
+    background: rgba(255,255,255,0.15);
+  }
+  
+
+
+  

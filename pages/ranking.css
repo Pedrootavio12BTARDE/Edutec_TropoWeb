@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../fontes/AkiraExpanded.otf') format('opentype');
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .titulo {
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+
+  body {
+    background: linear-gradient(
+      135deg,
+      #0d1415 0%,
+      #132326 40%,
+      #192A2C 100%
+    );
+    min-height: 100vh;
+    font-family: 'Nexa', sans-serif;
+    color: white;
+  }
+  
+  /* ---------------- MENU ---------------- */
+  
+  header .secao1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo img {
+    width: 180px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu a {
+    color: white;
+    font-family: "Archivo", sans-serif;
+    text-decoration: none;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .menu a:hover {
+    color: #A6FF00;
+    transform: scale(1.05);
+  }
+  
+  .menu a:last-child {
+    border: 1px solid white;
+    padding: .4rem .9rem;
+    border-radius: 5px;
+  }
+  
+  .menu a:last-child:hover {
+    background: white;
+    color: #000;
+  }
+  
+  /* ---------------- TÍTULO ---------------- */
+  
+  .titulo {
+    margin-top: 4rem;
+    text-align: center;
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
+  
+/* ---------------- CARDS DO RANKING ---------------- */
+
+.cards {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2.5rem;
+}
+
+/* Card geral */
+.card {
+    width: 220px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* sombra suave e moderna */
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/* efeito hover */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.35);
+}
+
+/* card do 1° lugar maior */
+.primeiro {
+    height: 300px;
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+/* "foto" do perfil */
+.foto {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1rem auto;
+    background: #d9d9d9;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.4);
+}
+
+
+
+/* Nome / posição */
+.card h3 {
+    font-family: "Nexa Heavy", sans-serif;
+    font-size: 1.1rem;
+    margin-top: .5rem;
+}
+
+/* Pontos */
+.card p {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+
+    background: #3c7f8f;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARD BASE ----------------------------------------------------- */
+
+.card {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2rem 1.2rem;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 0px 0px 18px rgba(0,0,0,0.25);
+}
+
+
+/* PRIMEIRO LUGAR ------------------------------------------------ */
+
+.card.primeiro {
+    transform: scale(1.08);
+    background: rgba(255, 255, 0, 0.14);
+    border: 2px solid rgba(255,255,0,0.4);
+}
+
+
+/* FOTO ---------------------------------------------------------- */
+
+.foto {
+    width: 85px;
+    height: 85px;
+    background: #d9d9d9;
+    border-radius: 50%;
+}
+
+
+ 

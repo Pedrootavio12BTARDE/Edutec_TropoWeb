@@ -63,7 +63,7 @@ async function finalizarQuiz() {
     if (!user) return alert("Você precisa estar logado para salvar o resultado!");
 
     // Envia resultado para o backend
-    await fetch("http://localhost:3333/salvarResultado", {
+    await fetch("https://back-end-tropo-web.vercel.app/salvarResultado", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ usuario: user, acertos, tempo }) // <-- CORRIGIDO

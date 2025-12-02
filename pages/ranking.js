@@ -2,7 +2,7 @@ const main = document.querySelector("main");
 
 async function carregarRanking() {
     try {
-        const response = await fetch("http://localhost:3333/ranking");
+        const response = await fetch("https://back-end-tropo-web.vercel.app/ranking");
 
         if (!response.ok) {
             throw new Error("Erro no servidor");
